@@ -101,7 +101,6 @@ Screenshots of the output are included in this folder for verification.
 ## Notes
 
 * The same approach extends to **higher‑dimensional polytopes** by supplying the appropriate matrices **A** and **b**.
-* 
 ---
 
 ## GSoC 2026 Context
