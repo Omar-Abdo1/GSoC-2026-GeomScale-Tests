@@ -76,8 +76,7 @@ Constraints are provided in the form `g(x) ≤ 0`, where:
 g_i(c, r) = a_i^T c + r ||a_i|| - b_i
 ```
 
-The script uses the **MMA algorithm (`NLOPT_LD_MMA`)** for gradient‑based optimization.
-It also demonstrates results on two simple 2D examples.
+The script uses an optimization algorithm from nloptr that is suitable for this type of problem. nloptr provides several algorithms, and the one used here (MMA) gives correct results quickly
 
 ---
 
@@ -102,8 +101,7 @@ Screenshots of the output are included in this folder for verification.
 ## Notes
 
 * The same approach extends to **higher‑dimensional polytopes** by supplying the appropriate matrices **A** and **b**.
-* If gradient information is unavailable, the algorithm can be switched to a derivative‑free method (e.g., `NLOPT_LN_COBYLA`).
-
+* 
 ---
 
 ## GSoC 2026 Context
