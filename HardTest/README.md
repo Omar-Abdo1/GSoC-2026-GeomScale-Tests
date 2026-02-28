@@ -5,9 +5,7 @@
 This folder contains an implementation of the **maximum inscribed ball** (Chebyshev center) computation for a convex polytope described by linear inequalities of the form:
 
 ```
-$$
-A x \le b
-$$
+Ax <= b
 ```
 
 The implementation uses the **CRAN package `nloptr`** (a general‑purpose nonlinear optimization library) to solve the equivalent linear program.
@@ -55,14 +53,14 @@ The console will display the computed centers and radii for both polytopes.
 The polytope is given in **H‑representation**:
 
 ```
-A x \le b
+Ax <= b
 ```
 
 The largest inscribed ball has center **c** and radius **r** satisfying:
 
 ```
-a_i^T c + r ||a_i|| \le b_i   for all i
-r \ge 0
+a_i^T c + r ||a_i|| <= b_i   for all i
+r >= 0
 ```
 
 The problem is cast as a linear program:
@@ -75,7 +73,7 @@ Because `nloptr` performs minimization, we instead minimize **−r**.
 Constraints are provided in the form `g(x) ≤ 0`, where:
 
 ```
-g_i(c, r) = a_i^T c + r ||a_i|| − b_i
+g_i(c, r) = a_i^T c + r ||a_i|| - b_i
 ```
 
 The script uses the **MMA algorithm (`NLOPT_LD_MMA`)** for gradient‑based optimization.
