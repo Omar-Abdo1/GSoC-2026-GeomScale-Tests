@@ -1,12 +1,9 @@
+
 # GSoC 2026 - GeomScale Tests
-**Project:** Exclude Lpsolve
-**Applicant:** Omar Abdo
 
-## Easy Test
-**Task:** Built and run the R and C++ interfaces of volesti. Compute the maximum ball of a polytope using the existing functions.
+**Applicant:** Omar Abdo  
+**Project:** Exclude Lpsolve (Replace lpSolve in volesti)
 
-**Result:**
-I successfully built the C++ interface, generated a 3D H-polytope (cube), and computed the maximum inscribed ball (Chebyshev ball) utilizing the `ComputeInnerBall()` function.
+This repository contains my solutions to the required tests for the GeomScale GSoC project.
 
-- **Source Code:** [easy_test.cpp](EasyTest/easy_test.cpp)
-- **Output Screenshot:** ![Result](EasyTest/result.png)
+## Repository Structure
