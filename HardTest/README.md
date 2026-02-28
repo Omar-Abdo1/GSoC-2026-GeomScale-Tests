@@ -76,7 +76,7 @@ Constraints are provided in the form `g(x) ≤ 0`, where:
 g_i(c, r) = a_i^T c + r ||a_i|| - b_i
 ```
 
-The script uses an optimization algorithm from nloptr that is suitable for this type of problem. nloptr provides several algorithms, and the one used here (MMA) gives correct results quickly
+The script uses an optimization algorithm from nloptr that is suitable for this type of problem. nloptr provides several algorithms, and the one used here (MMA) gives correct results quickly // todo
 
 ---
 
