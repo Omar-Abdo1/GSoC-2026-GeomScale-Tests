@@ -5,7 +5,9 @@
 This folder contains an implementation of the **maximum inscribed ball** (Chebyshev center) computation for a convex polytope described by linear inequalities of the form:
 
 ```
+$$
 A x \le b
+$$
 ```
 
 The implementation uses the **CRAN package `nloptr`** (a general‑purpose nonlinear optimization library) to solve the equivalent linear program.
