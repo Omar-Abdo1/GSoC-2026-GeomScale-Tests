@@ -6,11 +6,25 @@
 
 This repository contains my solutions to the required tests for the GeomScale GSoC project.
 
-## Repository Structure
-.
-├── easy_test/ # Easy Test: Build volesti and compute inner ball
-│ ├── easy_test.cpp # C++ code to compute Chebyshev center of a cube
-│ └── result.png # Screenshot of the output
-├── medium_test/ # Medium Test: Research CRAN and C++ LP solvers
-│ └── Medium_Test_Report.pdf # Detailed report (ROI, GLPK, HiGHS + algorithm + examples)
-└── README.md # This file
+## Test Status
+
+- [x] **Easy Test** – Completed  
+  - Built the C++ interface of volesti.  
+  - Generated a 3D H‑polytope (cube) and computed its maximum inscribed ball using `ComputeInnerBall()`.  
+  - See `EasyTest/` for source code and output screenshot.
+
+- [x] **Medium Test** – Completed  
+  - Identified one additional CRAN package: **ROI** (R Optimization Infrastructure).  
+  - Identified two open‑source C++ LP solvers: **GLPK** and **HiGHS**.  
+  - Explained the algorithm for the Chebyshev center and provided simple 2D examples (square, right triangle).  
+  - Full report available in `MediumTest/`.
+
+- [ ] **Hard Test** – Not yet attempted (optional, will be added if time permits)  
+  - Implementation of the maximum ball computation with CRAN package `nloptr`.
+
+---
+
+## Contact
+
+- GitHub: [@OmarAbdo](https://github.com/Omar-Abdo1)  
+- Email: omarradwan10a@gmail.com 
