@@ -78,7 +78,7 @@ g_i(c, r) = a_i^T c + r ||a_i|| - b_i
 
 The script uses the COBYLA algorithm (NLOPT_LN_COBYLA) from nloptr. This is a derivative‑free optimization method that works well for problems with nonlinear constraints and does not require gradient information. It reliably finds the correct solution for the tested examples.
 
-If gradient information were available, a gradient‑based algorithm (such as MMA) could be used for potentially faster convergence.
+Although gradient‑based algorithms (such as MMA) could offer faster convergence, we chose COBYLA because it avoids the need to compute and supply gradients, simplifying the implementation and reducing the risk of errors. For the small‑scale test problems considered (square and triangle), the speed difference is negligible, and COBYLA still produces accurate results.
 
 ---
 
