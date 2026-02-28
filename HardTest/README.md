@@ -76,7 +76,9 @@ Constraints are provided in the form `g(x) ≤ 0`, where:
 g_i(c, r) = a_i^T c + r ||a_i|| - b_i
 ```
 
-The script uses an optimization algorithm from nloptr that is suitable for this type of problem. nloptr provides several algorithms, and the one used here (MMA) gives correct results quickly // todo
+The script uses the COBYLA algorithm (NLOPT_LN_COBYLA) from nloptr. This is a derivative‑free optimization method that works well for problems with nonlinear constraints and does not require gradient information. It reliably finds the correct solution for the tested examples.
+
+If gradient information were available, a gradient‑based algorithm (such as MMA) could be used for potentially faster convergence.
 
 ---
 
