@@ -19,10 +19,9 @@ This repository contains my solutions to the required tests for the GeomScale GS
 │   └── Medium_Test_Report_Omar_Abdo.pdf  # Detailed report (ROI, GLPK, HiGHS + algorithm + examples)
 ├── HardTest/                      # Hard Test: Implementation with nloptr
 │   ├── HardTest.R                 # R script using nloptr to compute maximum inscribed ball
-│   ├── square_output.png          # Screenshot of square test result
-│   ├── triangle_output.png        # Screenshot of triangle test result
-│   └── README.md                  # Brief explanation of the implementation
-└── README.md                      # This file
+│   ├── hard_test_results.png      # Screenshot of test result
+│   ├── README.md                 # Brief explanation of the implementation 
+└── README.md                     # This file
 ```
 
 ## Test Status
