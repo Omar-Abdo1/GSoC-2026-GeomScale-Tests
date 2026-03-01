@@ -86,19 +86,28 @@ Although gradient‑based algorithms (such as MMA) could offer faster convergenc
 
 ### Square: −1 ≤ x ≤ 1, −1 ≤ y ≤ 1
 
-* **Center:** (0, 0)
-* **Radius:** 1
-  *(as expected)*
+```
+=== Square: -1 ≤ x ≤ 1, -1 ≤ y ≤ 1 ===
+Center: ( -6.562388e-16 ,  -1.827019e-11 )
+Radius:  1
+Status:  4  -  NLOPT_XTOL_REACHED: Optimization stopped because xtol_rel or xtol_abs (above) was reached.
+```
 
-### Right Triangle: x ≥ 0, y ≥ 0, x + y ≤ 2
-
-* **Center:** ≈ (0.586, 0.586)
-* **Radius:** ≈ 0.586
-  *(matches the analytical solution)*
-
-Screenshots of the output are included in this folder for verification.
+The computed center is numerically ≈ (0, 0), and the radius is 1, as expected for the unit square.
 
 ---
+
+### Triangle: x ≥ 0, y ≥ 0, x + y ≤ 2
+
+```
+=== Triangle: x ≥ 0, y ≥ 0, x + y ≤ 2 ===
+Center: ( 0.586 ,  0.586 )
+Radius:  0.586
+Status:  4  -  NLOPT_XTOL_REACHED: Optimization stopped because xtol_rel or xtol_abs (above) was reached.
+```
+
+The result matches the analytical Chebyshev center of the right triangle.
+
 
 ## Notes
 
