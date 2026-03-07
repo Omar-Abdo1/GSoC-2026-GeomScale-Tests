@@ -13,13 +13,13 @@ We generated random H-polytopes (using the code in `stress_test.cpp`) with dimen
 | 20        | 10/10                    |
 | 30        | 10/10                    |
 | 40        | 10/10                    |
-| 50        | 9/10                     |
-| 60        | 10/10                    |
+| 50        | 10/10                    |
+| 60        | 9/10                     |
 | 70        | 4/10                     |
 
 ## What This Means
-- Up to dimension 40, lp_solve is reliable.
-- At dimension 50, the first numerical issue appears.
+- Up to dimension 50, lp_solve is reliable.
+- At dimension 60, the first numerical issue appears.
 - At dimension 70, the success rate drops to **only 40%**. The other 60% of cases either produced results that violated the constraints or threw exceptions.
 
 This experiment confirms that lp_solve is **not reliable** for dimensions above 60–70, which is exactly why volesti needs a modern, robust solver like HiGHS.
