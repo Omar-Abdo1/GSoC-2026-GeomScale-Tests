@@ -12,16 +12,20 @@ This repository contains my solutions to the required tests for the GeomScale GS
 
 ```
 .
-├── EasyTest/                     # Easy Test: Build volesti and compute inner ball
-│   ├── easy_test.cpp             # C++ code to compute Chebyshev center of a cube
-│   └── result.png                # Screenshot of the output
-├── MediumTest/                   # Medium Test: Research CRAN and C++ LP solvers
-│   └── Medium_Test_Report_Omar_Abdo.pdf  # Detailed report (ROI, GLPK, HiGHS + algorithm + examples)
-├── HardTest/                      # Hard Test: Implementation with nloptr
-│   ├── HardTest.R                 # R script using nloptr to compute maximum inscribed ball
-│   ├── hard_test_results.png      # Screenshot of test result
-│   ├── README.md                 # Brief explanation of the implementation 
-└── README.md                     # This file
+├── EasyTest/                    
+│   ├── easy_test.cpp
+│   └── result.png
+├── MediumTest/                   
+│   └── Medium_Test_Report_Omar_Abdo.pdf
+├── HardTest/                      
+│   ├── HardTest.R
+│   ├── hard_test_results.png
+│   └── README.md
+├── StressTest/                    
+│   ├── stress_test.cpp            
+│   ├── results_table.png          
+│   ├── README.md                   
+└── README.md                       
 ```
 
 ## Test Status
